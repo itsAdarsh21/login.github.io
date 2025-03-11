@@ -1,0 +1,130 @@
+@import url();
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Video Background */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send video to the back */
+}
+
+.wrapper {
+    position: relative;
+    width: 420px;
+    padding: 20px;
+    background: rgba(70, 71, 71, 0.85); /* Transparent background */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 40px; /* Space for icon */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: rgba(84, 180, 199, 0.8);
+}
+
+/* Styling the icons inside input fields */
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 10px 0;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(81, 173, 230);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgb(246, 246, 246);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: lightgray;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
